@@ -1,15 +1,11 @@
 //
 include\
 ':deprecated-projectdata-openrpgmaker'
-//':shared-engine-test',\
-//\
-//':shared-project', \
-//':shared-project-port-orm',\
-//':shared-project-utility',\
-//\
-//':shared-tools-spriter',\
-//\
-//':shared-xmlfiles-globals',\
-//':shared-xmlfiles-private',\
-//':shared-xmlfiles-project'
-\
+//':brm-shared-engine-test',\
+//':brm-shared-project', \
+//':brm-shared-project-port-orm',\
+//':brm-shared-project-utility',\
+//':brm-shared-tools-spriter',\
+//':brm-shared-xmlfiles-globals',\
+//':brm-shared-xmlfiles-private',\
+//':brm-shared-xmlfiles-project'
