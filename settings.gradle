@@ -1,11 +1,6 @@
 //
 include\
-':deprecated-projectdata-openrpgmaker'
-//':brm-shared-engine-test',\
-//':brm-shared-project', \
-//':brm-shared-project-port-orm',\
-//':brm-shared-project-utility',\
-//':brm-shared-tools-spriter',\
-//':brm-shared-xmlfiles-globals',\
-//':brm-shared-xmlfiles-private',\
-//':brm-shared-xmlfiles-project'
+    ':brm-project-prototype',\
+    ':brm-project-templated',\
+    ':deprecated-importable-openrpgmaker',\
+    ':editor-global-data'
