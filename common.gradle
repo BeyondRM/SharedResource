@@ -1,26 +1,18 @@
 //
-apply plugin: 'java'
 apply plugin: 'maven'
 
-String mavenGroupId = 'beyondrm.shared'
 String mavenVersion = '0.1'
-
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 repositories {
   mavenLocal();
-  mavenCentral();
 }
 
 dependencies {
-  testCompile 'junit:junit:4.10'
 }
 
 String mavenArtifactId = name
 
-group = mavenGroupId
+group = rootProject.group
 version = mavenVersion
 
 task sourcesJar(type: Jar, dependsOn: classes, description: 'Creates a jar from the source files.') {
@@ -35,7 +27,7 @@ artifacts {
 
 configure(install.repositories.mavenInstaller) {
   pom.project {
-    groupId = mavenGroupId
+    groupId = group
     artifactId = mavenArtifactId
     version = mavenVersion
   }
