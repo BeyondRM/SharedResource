@@ -1,7 +1,6 @@
 //
+apply plugin: 'java'
 apply plugin: 'maven'
-
-String mavenVersion = '0.1'
 
 repositories {
   mavenLocal();
@@ -11,11 +10,12 @@ dependencies {
 }
 
 String mavenArtifactId = name
+String mavenVersion = '0.1'
 
 group = rootProject.group
 version = mavenVersion
 
-task sourcesJar(type: Jar, dependsOn: classes, description: 'Creates a jar from the source files.') {
+task sourcesJar(type:Jar, dependsOn:classes, description:'Creates a jar from the source files.') {
   classifier = 'sources'
   from sourceSets.main.allSource
 }
