@@ -1,15 +1,14 @@
-The subprojects of this repository may be as many as necessary; but they will generally be for one of the following use
-cases:
-- editor-related
-  - editor meta-data files
-  - editor project-related metadata files: for describing the properties of the project; this meta-data will not end up
-    being included in the built data.
-- engine-related
-  -
-- platform-related
-  -
-- miscellaneous
-  -
+The sub-projects of this repository may be as many as necessary; but they will generally be one of the following cases:
+  - editor-related
+    - editor meta-data files
+    - editor project-related metadata files: for describing the properties of the project; this meta-data will not end up
+      being included in the built data.
+  - engine-related
+    -
+  - platform-related
+    -
+  - miscellaneous
+    -
 
 
 
