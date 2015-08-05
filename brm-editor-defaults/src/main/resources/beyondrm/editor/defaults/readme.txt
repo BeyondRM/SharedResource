@@ -1,0 +1,1 @@
+  This path is meant as the user's "home" directory; it should be used for the editor configuration file(s).

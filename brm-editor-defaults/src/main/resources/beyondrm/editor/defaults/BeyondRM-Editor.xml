@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This contains tagged XML data for controlling just what editing-session properties are retained between sessions. These
+tags control whether the editor is fullscreen, the various user-interface attributes, and the last-used project (and if
+we should re-open the last project) We are not handling having multiple projects open (not yet, anyway), so this should
+only handle the last opened project.
+
+This base path for this file is meant as the root "BeyondRM" directory within the user's "My Documents" path. It should
+contain subdirectories for the defaults and the projects; each of those contains their own hierarchies.
+-->
+<beyondrm-editor>
+  <editor-dimensions is-fullscreen="true" windowed="0;0;1328;736" />
+  <editor-interface>
+    <interface-mapping-splitters min-split-main="207;930" min-split-opts="511;94" />
+  </editor-interface>
+  <editor-paths baseline="../Documents"
+                core-defaults="%baseline%/Defaults"
+                core-projects="%baseline%/Projects"
+                last-used-project="" />
+  <editor-project-last last-opened="/Testificates/BrmProject.xml" reopen="true" />
+</beyondrm-editor>
