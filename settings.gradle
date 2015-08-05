@@ -1,7 +1,8 @@
 //
 include\
-    ':data-globals',\
-    ':brm-project-prototype',\
-    ':brm-project-templated',\
-    ':deprecated-importable-openrpgmaker',\
-    ':editor-global-data'
+':brm-editor-defaults',\
+':brm-project-globals',\
+':brm-project-prototype',\
+':brm-project-samples',\
+':brm-project-spritegen',\
+':openrpgmaker'

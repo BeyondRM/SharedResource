@@ -1,22 +1,35 @@
-The sub-projects of this repository may be as many as necessary; but they will generally be one of the following cases:
-  - editor-related
-    - editor meta-data files
-    - editor project-related metadata files: for describing the properties of the project; this meta-data will not end up
-      being included in the built data.
-  - engine-related
-    -
-  - platform-related
-    -
-  - miscellaneous
-    -
+  All of the Shared project modules are for storing images and XML files which prototype the data that goes into a game
+project. The shared modules:
 
+  - brm-editor-defaults
+    - beyondrm.editor.defaults
+      - currently only contains one XML file for persisting the editor's states across sessions.
 
+  - brm-project-globals  - both paths have packages for facesets, fontsets, and tilesets.
+    - beyondrm.abstract.*
+      - .
+    - beyondrm.globals.images.*
 
-- archival storage of the competition's (namely, Open RPG Maker) XML format files, in a working data tree. This will be
-  for no other reason to hold the extraneous XML format files while I am comparing/creating my own implementation.
-- a project for storing the project-baseline files. This is for the primary project data that is part of the project's
-  game database.
-- a project for storing the project-supplement files, such as graphics and media files.
-- a project for storing the miscellaneous support files, such as for things the editor may track that do not
-  go into the built game-data.
-- a project for storing editor-utilities data, such as XML files and graphics for a sprite and animation editor.
+  - brm-project-prototype
+    - beyondrm.project
+      - project definition, credits.
+    - beyondrm.project.database.*
+      - project database: attributes/elements, animations, characters, classes, conditions/states, monsters, troops,...
+    - beyondrm.project.mapmaker.*
+      - project mapping: map-making attributes, the maps list, map data/layers, map events/scripts
+    - beyondrm.project.system.*
+      - project system data: fontsets, tilesets, variables, etc. Things that apply to the Engine as static resources...
+    - .
+      - .
+
+  - brm-project-samples
+    - beyondrm.project.samples.*
+      - project samples and templates for minimalist, typical, and extended projects.
+
+  - brm-project-spritegen
+    - beyondrm.project.tooldata.spritery.*
+      - editor sprite resources for creating custom sprites and faces for characters.
+
+  - openrpgmaker
+    - archival module of the competition's (namely, Open RPG Maker) XML files. This should only exist for the reason of
+      holding the extraneous XML format files while I am comparing/creating my own implementation.
